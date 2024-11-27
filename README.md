@@ -1,11 +1,8 @@
-# Personal portfolio website
+# My website
   <p>
-     This is my personal portfolio website. This website introduces me, 
-     including my background, skills, study experience, project experience, 
-     contact information, etc.
-  </p>
-  <p>
-    This website developed by Duan.
+     This is my personal website. This website introduces me, including my 
+     background, skills, study experience, project experience, contact 
+     information, etc.
   </p>
 
 ## The technologies used to build the web app
