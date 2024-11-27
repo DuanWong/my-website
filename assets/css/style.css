@@ -1,0 +1,363 @@
+:root {
+    --app-light-background: #f8f8f8;
+    --app-dark-background: #c1bdcc;
+    --app-font-color:#d92e2b;
+    --app-topic-color:#3a8df2;
+    --app-icon-color: #5ae8b9;
+    --app-footer-color:#777579;
+    --app-box-radius: 15px;
+    --app-button-radius: 20px;
+    --app-image-radius: 50%;
+}
+
+.to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: none;
+    border: 2px solid var(--app-font-color);
+    color: var(--app-font-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+
+    i {
+        font-size: 20px;
+    }
+
+}
+
+.to-top:hover {
+    background-color: var(--app-font-color);
+    color: #fff;
+    transition: ease-in-out 0.25s;
+}
+
+/*--------------------------------------------*/
+/*Utility classes                             */
+/*--------------------------------------------*/
+
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display:grid;
+    place-items: center;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.row {
+    gap:80px;
+    flex-wrap: wrap;
+}
+
+.row-three {
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc(50% - 40px);
+}
+
+.block {
+    padding:80px 0 150px;
+}
+
+main {
+    margin-top: 72px;
+}
+
+.topic {
+    color: var(--app-topic-color);
+}
+
+/*--------------------------------------------*/
+/*Header                                      */
+/*--------------------------------------------*/
+
+header {
+    height: 72px;
+    line-height: 72px;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background-color: var(--app-light-background);
+
+    h1 {
+        font-size: 30px;
+        color: var(--app-topic-color);
+    }
+    
+    a {
+        text-decoration-line: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0 40px 0 0;
+        color: #000;
+    }
+
+    a:hover {
+        color: var(--app-topic-color);
+        transform: scale(1.2);
+        transition: ease-in-out 0.25s;
+    }
+}
+
+/*--------------------------------------------*/
+/*Home                                        */
+/*--------------------------------------------*/
+
+.hero-banner {
+    height: calc(100vh - 72px);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 72px;
+    background: var(--app-light-background) url(../img/hero-banner.png) center center / cover no-repeat;
+}
+
+.image-one {
+    width:350px;
+    height:100px;
+}
+
+.intro {
+    padding: px 0;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.highlight-one {
+    color: var(--app-font-color);
+}
+
+.hire {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px solid var(--app-font-color);
+    color: var(--app-font-color);
+    border-radius: var(--app-button-radius);
+    background-color: var(--app-light-background);
+}
+
+.hire:hover {
+    background-color: var(--app-font-color);
+    color: #fff;
+    transition: ease-in-out 0.25s;
+}
+
+.duan-one {
+    border-radius: var(--app-image-radius);
+}
+
+/*--------------------------------------------*/
+/*About Me                                    */
+/*--------------------------------------------*/
+
+.aboutme {
+    scroll-margin-top: 72px;
+}
+
+.image-two {
+    border-radius: var(--app-image-radius);
+}
+
+.aboutme-text {
+    padding: 50px;
+}
+
+.detail {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.download {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 2px solid var(--app-font-color);
+    color: var(--app-font-color);
+    border-radius: var(--app-button-radius);
+    background-color: #fff;
+}
+
+.download:hover {
+    background-color: var(--app-font-color);
+    color: #fff;
+    transition: ease-in-out 0.25s;
+}
+
+.highlight-two {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/*--------------------------------------------*/
+/*My skill                                    */
+/*--------------------------------------------*/
+
+.myskills {
+    font-size: 20px;
+    scroll-margin-top: 72px;
+    background-color: var(--app-light-background);
+}
+
+progress {
+    width: 500px;
+}
+
+.part {
+    margin-top:40px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.25s;
+}
+
+
+/*--------------------------------------------*/
+/*My project                                  */
+/*--------------------------------------------*/
+
+.project {
+    width: 350px;
+    height: 300px; 
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 10%);
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.25s;
+}
+
+.my-projects {
+    scroll-margin-top: 72px;
+}
+
+.example {
+    margin-top: 20px;
+}
+
+/*--------------------------------------------*/
+/*My education                                */
+/*--------------------------------------------*/
+
+.school {
+    margin-top: 30px;
+    padding: 15px 15px;
+    font-weight: 500;
+    text-align: left;
+    width: auto;
+    height: auto;
+    border-radius: var(--app-box-radius);
+}
+
+.school:hover {
+    background-color: #fff;
+    transition: ease-in-out 0.25s;
+}
+
+.my-education {
+    scroll-margin-top: 72px;
+    background-color: var(--app-light-background);
+}
+ 
+/*--------------------------------------------*/
+/*Contact me                                  */
+/*--------------------------------------------*/
+.contact-me {
+    scroll-margin-top: 72px;
+}
+
+.media {
+    margin:20px 20px;
+    width: 350px;
+    height: 300px; 
+    border-radius: 40px;
+    padding: 20px 20px;
+    background-color: var(--app-light-background);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 10%);
+
+    i {
+        font-size: 80px;
+    }
+}
+
+.fa-phone-volume {
+    color: #3a8df2;
+}
+
+.fa-envelope {
+    color: #ff9500;
+}
+
+.fa-facebook {
+    color: var(--app-font-color);
+}
+
+.fa-solid:hover, .fab:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.25s;
+}
+
+/*--------------------------------------------*/
+/*Footer                                      */
+/*--------------------------------------------*/
+
+footer {
+    height: 72px;
+    background-color: var(--app-footer-color);
+    justify-content: center;
+    line-height: 72px;
+    font-size: 16px;
+}
+
+
+/*--------------------------------------------*/
+/*Media screen                                */
+/*--------------------------------------------*/
+
+@media screen and (max-width: 900px) {
+    .col {
+        width: calc(50% - 40px);
+    }
+
+    .example, .media {
+        width:100%;
+        width: 350px;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .col, .example, .media {
+        width: 100%;
+    }
+}
