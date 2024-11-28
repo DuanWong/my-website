@@ -127,6 +127,7 @@ header {
     place-items: center;
     text-align: center;
     margin-top: 72px;
+    position:relative;
     background: var(--app-light-background) url(../img/hero-banner.png) center center / cover no-repeat;
 }
 
@@ -168,6 +169,22 @@ h1 {
 
 .duan-one {
     border-radius: var(--app-image-radius);
+}
+
+.media-shortcuts {
+    font-size:40px;
+    position:absolute;
+    inset: auto auto 10px;
+    gap: 50px;
+}
+
+.fa-github {
+    color:#d676a6;
+}
+
+.fa-github:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.25s;
 }
 
 /*--------------------------------------------*/
@@ -324,7 +341,7 @@ progress {
     color: var(--app-font-color);
 }
 
-.fa-solid:hover, .fab:hover {
+.fa-envelope:hover, .fab:hover {
     transform: scale(1.2);
     transition: ease-in-out 0.25s;
 }
