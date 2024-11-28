@@ -226,7 +226,7 @@ h1 {
 
 .download {
     margin-top: 20px;
-    width: 150px;
+    width: 100px;
     height: 40px;
     font-weight: 500;
     font-size: 14px;
@@ -327,7 +327,7 @@ progress {
 }
 
 .media {
-    margin:20px 20px;
+    margin:20px 0;
     width: 350px;
     height: 300px; 
     border-radius: 40px;
