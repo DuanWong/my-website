@@ -106,7 +106,6 @@ header {
         text-decoration-line: none;
         font-size: 18px;
         font-weight: 500;
-        padding: 0 40px 0 0;
         color: #000;
     }
 
@@ -115,6 +114,21 @@ header {
         transform: scale(1.2);
         transition: ease-in-out 0.25s;
     }
+
+    .tag {
+        gap:40px;
+    }
+}
+
+.logo-box {
+    gap:20px;
+    align-items: center;
+}
+
+.logo {
+    width:50px;
+    height:50px;
+    border-radius: var(--app-image-radius);
 }
 
 /*--------------------------------------------*/
